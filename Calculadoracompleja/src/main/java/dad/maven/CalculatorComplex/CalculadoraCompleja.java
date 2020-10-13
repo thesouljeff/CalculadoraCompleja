@@ -23,6 +23,8 @@ public class CalculadoraCompleja extends Application {
 	
 	private String[] _operador = {"+", "-", "*", "/"};
 
+	
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
@@ -74,6 +76,10 @@ public class CalculadoraCompleja extends Application {
 		tfResultadoB.setAlignment(Pos.CENTER);
 		tfResultadoB.setDisable(true);
 		
+		
+		
+		
+		
 		HBox hbResultado = new HBox();
 		hbResultado.setSpacing(5);
 		hbResultado.getChildren().addAll(tfResultadoA, new Label("+"), tfResultadoB, new Label("i"));
@@ -87,12 +93,19 @@ public class CalculadoraCompleja extends Application {
 		root.setAlignment(Pos.CENTER);
 		root.getChildren().addAll(vbOperacion, vbNumeros);
 		
+		
+		
+		
 		Scene escena = new Scene(root, 320, 200);
+		
+		
 		
 		primaryStage.setScene(escena);
 		primaryStage.setTitle("CalculadoraCompleja");
 		primaryStage.show();
 	}
+	
+	
 	
 	public static void main(String[] args) {
 		launch(args);
